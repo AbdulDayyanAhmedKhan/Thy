@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+	crossorigin="anonymous">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form th:action="@{/adak/save}" method="post">
+		<div class="form-group">
+			<label for="exampleInputEmail1">Employee Name</label> <input
+				type="text" class="form-control" name="name"
+				placeholder="Enter email">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputPassword1">Age</label> <input type="number"
+				class="form-control" name="age" placeholder="Age">
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+
+
+</body>
+</html>
